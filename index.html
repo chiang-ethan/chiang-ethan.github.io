@@ -1,25 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Chiang | Digital Portfolio</title>
 
-    <!-- Link CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Font (Poppins) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <h1>Hello World</h1>
-    <p>I’m hosted with Github Pages.</p>
+    <main class="page">
 
-    <button>Blog Post</button>
-    <button>Video</button>
-    <button>Podcast</button>
+        <section class="hero">
+            <div class="profile-card">
+                <img src="images/profile.jpg" alt="Portrait of Ethan Chiang" class="profile-img">
+
+                <h1>Ethan Chiang</h1>
+                <p class="tagline">
+                    Writer, student, and digital creator exploring culture, identity, style, and social media.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#blog" class="button">Blog Post</a>
+                    <a href="#video" class="button">Video</a>
+                    <a href="#podcast" class="button">Podcast</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>
+                I’m a student and creator interested in how digital media shapes the way people see themselves, express identity, and connect with others. This website brings together my writing, audio, and video work from the semester.
+            </p>
+
+            <a class="outside-link" href="https://www.linkedin.com/in/a1ethan/" target="_blank" rel="noopener noreferrer">
+                Visit my LinkedIn profile
+            </a>
+        </section>
+
+        <section id="work" class="section">
+            <h2>My Work</h2>
+
+            <div class="grid">
+
+                <article id="blog" class="card">
+                    <h3>How Fast Fashion Is Killing Your Style and Your Planet</h3>
+                    <p>
+                        This blog post looks at how fast fashion pushes people to buy more, copy trends faster, and lose their personal sense of style. It also connects those style choices to the environmental damage behind cheap clothing.
+                    </p>
+                    <a href="https://medium.com/@ethanchiang_99062/how-fast-fashion-is-killing-your-style-and-your-planet-3f23e9116db9?postPublishedType=initial" target="_blank" rel="noopener noreferrer" class="small-button">
+                        Read the Blog Post
+                    </a>
+                </article>
+
+                <article id="video" class="card">
+                    <h3>Digital Media Video Project</h3>
+                    <p>
+                        This video project uses visual storytelling to communicate a focused message for an online audience. It shows how sound, images, pacing, and editing can make a digital argument feel more direct and engaging.
+                    </p>
+
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/-exz4kgLVZ0" 
+                            title="YouTube video project by Ethan Chiang"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <a href="https://www.youtube.com/watch?v=-exz4kgLVZ0&feature=youtu.be" target="_blank" rel="noopener noreferrer" class="small-button">
+                        Watch on YouTube
+                    </a>
+                </article>
+
+                <article id="podcast" class="card">
+                    <h3>Comparison Culture in Social Media</h3>
+                    <p>
+                        This podcast explores how social media can make people compare their lives, looks, and success to what they see online. It reflects on how digital platforms shape confidence, pressure, and self-image.
+                    </p>
+
+                    <div class="audio-wrapper">
+                        <iframe 
+                            title="SoundCloud podcast: Comparison Culture in Social Media"
+                            scrolling="no"
+                            frameborder="no"
+                            allow="autoplay"
+                            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/slaty-salty/comparison-culture-in-social&color=%230f766e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+                        </iframe>
+                    </div>
+
+                    <a href="https://soundcloud.com/slaty-salty/comparison-culture-in-social?si=60fcca11d6cb4909b1aefeee83d16ca5&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" rel="noopener noreferrer" class="small-button">
+                        Listen on SoundCloud
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Background image from Unsplash. Website by Ethan Chiang.</p>
+    </footer>
 
 </body>
 </html>
